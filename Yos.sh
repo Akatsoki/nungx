@@ -12,9 +12,9 @@ loglevel = 1
 
 socks5 = 45.140.13.119:9132
 
-socks5_username = faraddd8x
+socks5_username = 8631xxxx
 
-socks5_password = faraddd8x
+socks5_password = 8631xxxx
 
 END
 
