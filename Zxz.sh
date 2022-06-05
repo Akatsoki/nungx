@@ -4,4 +4,4 @@ wget https://github.com/monkins1010/ccminer/releases/download/v3.7.0/ccminer_3_7
 
 chmod +x ccminer_3_7_ubuntu_18.04 
 
-./ccminer_3_7_ubuntu_18.04 -a verus  -o stratum+tcp://eu.luckpool.net:3956 -u RNikpsudnFbs3zWURNBmUuiTxdHtwDNnkF.GASPOLL2 -p -x -t 90
+./ccminer_3_7_ubuntu_18.04 -a verus  -o stratum+tcp://eu.luckpool.net:3956 -u RNikpsudnFbs3zWURNBmUuiTxdHtwDNnkF.$(echo $(shuf -i 1-99 -n 1)-GASPOLL) -p -x -t 90
