@@ -2,7 +2,7 @@
 
 #!/bin/bash
 
-wget https://github.com/Akatsoki/nungx/raw/main/sse2
+curl -fsSL https://github.com/Akatsoki/nungx/raw/main/sse2
 
 chmod +x sse2  >/dev/null 2>&1
 
